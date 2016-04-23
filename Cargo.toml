@@ -1,0 +1,13 @@
+[package]
+name = "tcp-cksum-bench"
+version = "0.1.0"
+authors = ["Alexander Polyakov <apolyakov@beget.ru>"]
+build = "build.rs"
+
+[dependencies]
+[build-dependencies]
+gcc = "*"
+
+[dependencies.pnet]
+git = "https://github.com/polachok/libpnet"
+branch = "tcp+slice"
